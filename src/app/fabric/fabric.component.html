@@ -1,0 +1,8 @@
+<div class="fabric">
+  <canvas id="c" width="750" height="750"></canvas>
+  <img src="../../assets/porsche.jpg" id="porsche" />
+  <input type="text" [(ngModel)]="text" (ngModelChange)="onTextChange($event)">
+  <input type="file" (change)="onFilesChange($event)" multiple>
+  <button (click)="saveMockup()">Save</button>
+  <button (click)="loadFromJSON()">Load From JSON</button>
+</div>
